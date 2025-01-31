@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="project1.css" />
+    <title>Property Experts| Real estate| Sale property</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+          
+          <a href="/" class="logo"><h1>SALE HOUSE</h1></a>
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#terms" class="nav-link">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact1" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#enquiry" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="swiper-container heroslider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide fade">
+              <img src="./images/carousel-1.jpg" alt="House1" />
+            </div>
+            <div class="swiper-slide fade">
+              <img src="./images/carousel-2.jpg" alt="House2" />
+            </div>
+            <div class="swiper-slide fade">
+                <img src="./images/carousel-3.jpg" alt="House3" />
+              </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-chevron-right swiper-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-chevron-left swiper-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Find your dream home</h1>
+        <div class="search">
+          <input type="text" placeholder="Type Address, City, State" />
+          <a href="#about">Search</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section rent" id="about">
+      <div class="title">
+        <h1>Properties For Sale</h1>
+        <p>
+          Search over 2000 properties to sale from the top agents in the country
+        </p>
+      </div>
+
+      <div id="event" style="display: none;">
+        <h1>Hollow World</h1>
+        <h2 onclick="a()">&</h2>
+      </div>
+      <!-- <button onclick="z()">Onclick</button>
+      <script>
+        function z() {
+          document.querySelector('#event').style.display = 'block';
+          alert("Tharun Vallka");
+        }
+        function a() {
+          document.querySelector('#event').style.display = 'none';
+        }
+      </script>  -->
+      
+      <div class="rent-center container">
+
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/property1.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span onclick="p()">Buy</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p><i class="fa-solid fa-location-dot"></i> Perungalathur</p>
+            <div>
+              <span> &#8377;75Lakhs</span>
+              <span><i class="fa-solid fa-house"></i></span>
+            </div>
+          </div>
+        </div>
+        <div id="popupBox" class="hidden">
+          <div class="popup-header">
+            <button onclick="P()" id="closePopup" class="close-btn">&times;</button>
+          </div>
+          
+          <div class="popup-content">
+            <center><h3 style="position: absolute;top: 22px; ">House Details</h3></center>
+            <p>Residential Units : Single-Family Homes (2 BHK)<br> 
+              Location : This property is in New Perungalathur<br>
+              Price : &#8377;75 Lakhs <br> <br>
+              This tastefully designed 2 BHK Independent House is among Chennai's best properties, which is a coveted investment location. It is best suited for all kinds of families. Because this property is spacious, with a built-up area of 500 square_feet. This is a South facing property. It has 2 bathroom and 2 bedrooms. Some of the very well-known and reputed speciality hospitals like Mano Hospitals, Hindu Mission Hospital, Annai Arul Hospital are just a walk away from this location. </p>
+          </div>
+        </div>
+        
+        <div id="overlay" class="hidden"></div>
+
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/property2.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span onclick="q()">Buy</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p><i class="fa-solid fa-location-dot"></i> Thiruvanmaiyur</p>
+            <div>
+              <span> &#8377;85Lakhs </span>
+              <span><i class="fa-solid fa-house"></i></span>
+            </div>
+          </div>
+        </div>
+        <div id="popupBox1" class="hidden">
+          <div class="popup-header">
+            <button onclick="Q()" id="closePopup" class="close-btn">&times;</button>
+          </div>
+          <div class="popup-content">
+            <center><h3 style="position: absolute;top: 22px; ">House Details</h3></center>
+            <p>Residential Units : Beach House (2 BHK)<br> 
+              Location : This property is in Thiruvanmaiyur Beach<br>
+              Price : &#8377;85 Lakhs <br> <br>
+              Beach House as 2 BHK is among Chennai's best properties in Beach, which is a coveted investment location. It is best suited for all kinds of families and friends. Because this property is spacious, with a built-up area of 650 square_feet. This is a east facing property. It has 3 bathroom and 2 bedrooms. Some of the very well-known and Main bus stand and Beach are just a walk away from this location. </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/property3.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span onclick="r()">Buy</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p><i class="fa-solid fa-location-dot"></i> Tambaram</p>
+            <div>
+              <span> &#8377; 1Crore </span>
+              <span><i class="fa-solid fa-house"></i></span>
+            </div>
+          </div>
+        </div>
+        <div id="popupBox2" class="hidden">
+          <div class="popup-header">
+            <button onclick="R()" id="closePopup" class="close-btn">&times;</button>
+          </div>
+          <div class="popup-content">
+            <center><h3 style="position: absolute;top: 22px; ">House Details</h3></center>
+            <p>Residential Units : Joint Family House (3 BHK)<br> 
+              Location : This property is in East Tambaram<br>
+              Price : &#8377;1 Crore <br> <br>
+              Its an 3 BHK Joint Family House is among Chennai's best properties, which is a coveted investment location. It is best suited for Joint families. Because this property is spacious, with a built-up area of 750 square_feet. This is a east facing property. It has 4 bathroom and 3 bedrooms. Some of the very well-known and reputed speciality hospitals like 24/7 Hospitals, Government Hospital and also 24/7 food hotels and ATM are just a walk away from this location. </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/property4.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span onclick="s()">Buy</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p><i class="fa-solid fa-location-dot"></i> Velachery </p>
+            <div>
+              <span> &#8377;90Lakhs </span>
+              <span><i class="fa-solid fa-house"></i></span>
+            </div>
+          </div>
+        </div>
+        <div id="popupBox3" class="hidden">
+          <div class="popup-header">
+            <button onclick="S()" id="closePopup" class="close-btn">&times;</button>
+          </div>
+          <div class="popup-content">
+            <center><h3 style="position: absolute;top: 22px; ">House Details</h3></center>
+            <p>Residential Units : Single-Family Homes (2 BHK)<br> 
+              Location : This property is in Velachery<br>
+              Price : &#8377;90 Lakhs <br> <br>
+              This tastefully designed 2 BHK Independent House is among Chennai's best properties, which is a coveted investment location. It is best suited for all kinds of families. Because this property is spacious, with a built-up area of 600 square_feet. This is a North facing property. It has 2 bathroom and 2 bedrooms. Some of the very well-known and reputed speciality hospitals like SRK Hospitals, Annamalai Hospital and Railway Station and Bus Stand are just a walk away from this location. </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/property5.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span onclick="t()">Buy</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p><i class="fa-solid fa-location-dot"></i> Guindy</p>
+            <div>
+              <span> &#8377;70Lakh </span>
+              <span><i class="fa-solid fa-building"></i></span>
+            </div>
+          </div>
+        </div>
+        <div id="popupBox4" class="hidden">
+          <div class="popup-header">
+            <button onclick="T()" id="closePopup" class="close-btn">&times;</button>
+          </div>
+          <div class="popup-content">
+            <center><h3 style="position: absolute;top: 22px; ">House Details</h3></center>
+            <p>Residential Units : Single-Family Homes (3 BHK)<br> 
+              Location : This property is in Guindy<br>
+              Price : &#8377;70 Lakhs <br> <br>
+              Its an 2 BHK Independent House with an car parking is among Chennai's best properties, which is a coveted investment location. It is best suited for all kinds of families. Because this property is spacious, with a built-up area of 600 square_feet. This is a south facing property. It has 3 bathroom and 3 bedrooms. Some of the very well-known and reputed speciality hospitals like Kanan Hospitals, Child care Hospital and Railway Station and Bus Stand and also ATM are just a walk away from this location. </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/property6.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span onclick="u()">Buy</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p><i class="fa-solid fa-location-dot"></i> Porur</p>
+            <div>
+              <span> &#8377;1.3Crore</span>
+              <span><i class="fa-solid fa-building"></i></span>
+            </div>
+          </div>
+        </div>
+        <div id="popupBox5" class="hidden">
+          <div class="popup-header">
+            <button onclick="U()" id="closePopup" class="close-btn">&times;</button>
+          </div>
+          <div class="popup-content">
+            <center><h3 style="position: absolute;top: 22px; ">House Details</h3></center>
+            <p>Residential Units : Apartment (3 BHK)<br> 
+              Location : This property is in Porur<br>
+              Price : &#8377;1.3Crore <br> <br>
+              This tastefully designed 3 BHK Apartment is among Chennai's best properties, which is a coveted investment location. It is best suited for all kinds of families. Because this property is spacious, with a built-up area of 650 square_feet. This is a North facing property. It has 3 bathroom and 3 bedrooms. Some of the very well-known and reputed speciality hospitals like Multi Speciality Hospitals, Saravanan Hospital and Bus Stand and Schools are just a walk away from this location. </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/property7.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span onclick="v()">Buy</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p><i class="fa-solid fa-location-dot"></i> Solinganallur</p>
+            <div>
+              <span> &#8377;1.1Crore </span>
+              <span><i class="fa-solid fa-building"></i></span>
+            </div>
+          </div>
+        </div>
+        <div id="popupBox6" class="hidden">
+          <div class="popup-header">
+            <button onclick="V()" id="closePopup" class="close-btn">&times;</button>
+          </div>
+          <div class="popup-content">
+            <center><h3 style="position: absolute;top: 22px; ">House Details</h3></center>
+            <p>Residential Units : Apartment (2 BHK)<br> 
+              Location : This property is in Solinganallur<br>
+              Price : &#8377;1.1Crore <br> <br>
+              This tastefully designed located in ECR road 2 BHK Apartment is among Chennai's best properties, which is a coveted investment location. It is best suited for all kinds of families. Because this property is spacious, with a built-up area of 550 square_feet. This is a East facing property. It has 2 bathroom and 3 bedrooms. Some of the very well-known and reputed speciality hospitals like Multi Speciality Hospitals, VIRS Hospital and Bus Stand and RailWay Station are just a walk away from this location. </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top">
+            <div class="overlay">
+              <img src="./images/property8.jpg" alt="" />
+            </div>
+            <div class="pos">
+              <span onclick="w()">Buy</span>
+            </div>
+          </div>
+          <div class="bottom">
+            <p><i class="fa-solid fa-location-dot"></i> Kilambakkam</p>
+            <div>
+              <span> &#8377;1Crore</span>
+              <span><i class="fa-solid fa-building"></i></span>
+            </div>
+          </div>
+        </div>
+        <div id="popupBox7" class="hidden">
+          <div class="popup-header">
+            <button onclick="W()" id="closePopup" class="close-btn">&times;</button>
+          </div>
+          <div class="popup-content">
+            <center><h3 style="position: absolute;top: 22px; ">House Details</h3></center>
+            <p>Residential Units : Apartment (3 BHK)<br> 
+              Location : This property is in Kilambakkam <br>
+              Price : &#8377;1Crore <br> <br>
+              Its an 3 BHK Apartment is among Chennai's best properties, which is a coveted investment location. It is best suited for all kinds of families an friends. Because this property is spacious, with a built-up area of 750 square_feet. This is a North facing property. It has 3 bathroom and 3 bedrooms. Some of the very well-known and reputed speciality hospitals like General Hospitals, RK Hospital and Main Bus Stand are just a walk away from this location. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Contact -->
+    <section class="section contact" id="enquiry">
+      <div class="row">
+        <div class="col">
+          <h2>EXCELLENT SUPPORT</h2>
+          <p>
+            We love our customers and they can reach us any time of day we will
+            be at your service 24/7
+          </p>
+          <a href="" class="btn btn-1"><i class="fa-solid fa-phone"></i> Enquiry</a>
+        </div>
+        <div class="col">
+          <form action="">
+            <div>
+              <input type="email" placeholder="Email Address" />
+              <a href="mailto:premnatha111@gmail.com">Send</a>  <!--Add name and write email text-area-->
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+     <!-- Grid -->
+     <section class="section grid-layout" >
+      <div class="title" id="popular">
+        <h1>Popular Properties</h1>
+      </div>
+
+      <div class="wrapper container">
+        <div class="box box1">
+          <img src="./images/gridimage1.jpg" alt="" />
+        </div>
+        <div class="box box2">
+          <img src="./images/pic3.jpg" alt="" />
+        </div>
+        <div class="box box3">
+          <img src="./images/gridimage.jpg" alt="" />
+        </div>
+        <div class="box box4">
+          <img src="./images/gridimage2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="contact1" id="contact1">
+      <div class="details" style="display: grid; grid-template-columns: 84%; margin-left: 220px; margin-bottom: 50px;"> 
+        <center> <h1 style="padding-bottom: 20px;">About Us</h1> </center>
+        <p style="font-size: large;">Welcome to Sale House, your trusted partner in buying and selling homes. Our mission is to make the process of finding your dream home or selling your current property as seamless and rewarding as possible.</p>
+      </div>
+      
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="#about">About us</a>
+          <a href="#enquiry">Contact Us</a>
+          <a href="">Shipping Guide</a>
+          <a href="">Term & Conditions</a>
+          
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="">Online Store</a>
+          <a href="#enquiry">Customer Services</a>
+          <a href="">Promotion</a>
+          <a href="#popular">Top Brands</a>
+        </div>
+        <div class="col d-flex">
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-github"></i></span>
+          <span><i class="fa-brands fa-x-twitter"></i></span>
+          <span><i class="fa-brands fa-pinterest-p"></i></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="./js/project1.js"></script>
+</html>
+
